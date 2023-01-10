@@ -1,29 +1,37 @@
 import React from "react";
-import Cards from "./Cards.jsx";
-//include images into your bundle
+// include images into your bundle
 
-//create your first component
+// create your first component
 const SecondsCounter = (props) => {
 	return (
-<> 
-<Cards/>
-<div>
-				<h1>Contador: {props.numero6}{props.numero5}{props.numero4}{props.numero3}{props.numero2}{props.numero1} </h1>
+		<>
+		<div className="container justify-content-center d-flex bg-black mt-2" style={{width: 600, heaht: 10}}>
+			<div className="row">
+				<div className="col fs-1 bg-white mt-3 mb-3">
+				<i class="fa fa-clock"></i>
+				</div>
+				<div className="col">
+				<p className="fs-1 text-white mt-3">{props.numero6}</p>
+				</div>
+				<div className="col">
+				<p className="fs-1 text-white mt-3">{props.numero5}</p>
+				</div>
+				<div className="col">
+				<p className="fs-1 text-white mt-3">{props.numero4}</p>
+				</div>
+				<div className="col">
+				<p className="fs-1 text-white mt-3">{props.numero3}</p>
+				</div>
+				<div className="col">
+				<p className="fs-1 text-white mt-3">{props.numero2}</p>
+				</div>
+				<div className="col">
+				<p className="fs-1 text-white mt-3">{props.numero1}</p>
+				</div>
 			</div>
-
-</>
-	);
+		</div>
+		</>
+	)
 };
 
 export default SecondsCounter;
-
-
-
-
-
-
-
-
-
-
-
